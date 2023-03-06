@@ -31,12 +31,13 @@ body{
     width: 100px;
     border-radius: 50%;
     border: 20px solid skyblue;
-    border-top-color: transparent;
-    border-left-color: transparent;
+    border-top-color: royalblue;
+    border-left-color: yellow;
+    border-bottom: transparent;
     animation: spin 1.5s linear infinite;
 }
 .round:nth-child(2)::after{
-    border-bottom-color: cyan;
+    border-right-color: cyan;
     height: 80%;
     width: 80%;
     animation-duration: 1.05s;
