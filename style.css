@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loading{
+    height: 100vh;
+    width: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.loading::after{
+    content: "";
+    border-radius: 50%;
+    border: 20px solid wheat;
+    border-top-color: chartreuse;
+    border-bottom-color: gold;
+    border-left-color: orange;
+    border-right-color: cyan;
+    height: 100px;
+    width: 100px;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from{
+        /* transition: rotate(0deg); */
+        transform: rotate(0deg);
+    }
+    to{
+        /* transition: rotate(360deg); */
+        transform: rotate(360deg);
+    }
+}
